@@ -133,7 +133,26 @@ FString FBullCowGame::ConvertToLower(FString Word)
 void FBullCowGame::PrintIntro()
 {
 	// introduce the game
-	BuildWord();
+	BuildWord(); 
+	
+std::cout << "                          ..---.							\n";
+std::cout << "                         // |\\||\\							\n";
+std::cout << "  \\   /                 ///;||\\|;\\               \\   /	\n";
+std::cout << "    o               .__// \\\____//\\_,.              o		\n";
+std::cout << "  /   \\              Y{_\\_/  \\'' = __/           /   \\	\n";
+std::cout << "                     \\___   (o) (o)  }					\n";
+std::cout << "                       /         :--'    MOO!				\n";
+std::cout << "                  .---/ \\_    `__\\-.						\n";
+std::cout << "                 /     `--\\___(o'o) \\					\n";
+std::cout << "          \\   / |     \\      `===='  |\\   /				\n";
+std::cout << "            o    `.    `.    .'    .'   o					\n";
+std::cout << "          /   \\   (`.    `. '    .')  /   \\				\n";
+std::cout << "                  (  `.    `...'   )						\n";
+std::cout << "                  (   .+.    `-.   )						\n";
+std::cout << "                  (.-'  .>-._   `-.)						\n";
+std::cout << "  \\   /           (___.-'      `-.___)            \\   /	\n";
+std::cout << "    o              (                )               o		\n";
+std::cout << "  /   \\            (                )             /   \\	\n";
 	std::cout << "Welcome to Bulls and Cows, a fun word game!" << std::endl;
 	std::cout << "Can you guess the " << MagicWord.length();
 	std::cout << " letter word I'm thinking of?\n";
@@ -213,5 +232,3 @@ FBullCowCount FBullCowGame::GetBullsCows(FString){
 	}
 	return BC;
 }
-
-
